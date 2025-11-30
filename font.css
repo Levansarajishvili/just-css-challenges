@@ -1,0 +1,14 @@
+@font-face {
+    font-family: fuzzybubble;
+    src: url(./fonts/FuzzyBubbles-Regular.ttf);
+}
+
+@font-face {
+    font-family: pacifico;
+    src: url(./fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: notoSansGeorgia;
+    src: url(./fonts/NotoSansGeorgian-VariableFont_wdth\,wght.ttf);
+}

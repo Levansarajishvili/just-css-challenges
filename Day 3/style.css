@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.challenge-title {
+    color: #fff;
+    margin: 1rem 0;
+    font-family: notoSansGeorgia;
+}
+
+.sandbox {
+       font-family: pacifico;
+      color: #fff;
+      
+}
