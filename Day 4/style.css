@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h4 {
+    color: #fff;
+    font-family: fuzzybubble;
+    width: 100%;
+}
+
+section {
+     width: 100%;
+}
+
+
+.path {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #333;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+.path::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 12px dotted #fff;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    margin-top: -6px;
+}
+
+.pacman {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    animation: moveForward 5s linear infinite;
+}
+
+.pacman::before, .pacman::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 30px solid yellow;
+    margin-top: -30px;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: mouthTop 0.7s ease infinite;
+}
+
+.pacman::after {
+    border-color: yellow;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: mouthBottom 0.7s ease infinite;
+}
+
+@keyframes moveForward {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes mouthTop {
+    50% {
+        transform: rotate(44deg);
+    }
+}
+
+@keyframes mouthBottom {
+    50% {
+        transform: rotate(-44deg);
+    }
+}
