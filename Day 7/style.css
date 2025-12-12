@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline{
+    font-family: fuzzybubble;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.sendboxContainer {
+    width: 80%;
+    padding: 1rem;
+    background: rgb(255, 253, 253);
+    border: 2px solid grey;
+}
+
+.layoutTitla {
+    font-family: pacifico;
+    font-size: 1.5rem;
+
+}
+
+.layout1 header {
+    background: rgba(0, 238, 255, 0.1);
+    padding: 1rem;
+     border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+.layout1 main {
+    display: flex;
+    flex-direction: row;
+     background: rgba(0, 238, 255, 0.1);
+     border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+.layout1 footer {
+    background: rgba(0, 238, 255, 0.493);
+    padding: 1rem;
+     background: rgba(0, 238, 255, 0.1);
+      border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+.layout1 article {
+    flex: 3;
+    margin-right: 2%;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+     background: rgba(0, 238, 255, 0.281);
+     border-radius: 0.5rem;
+     padding: 1rem;
+}
+
+.layout1 aside {
+     flex: 1;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem;
+}
+
+.layout2 header {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 238, 255, 0.1);
+    padding: 1rem;
+     border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+
+.layout2 header .logo {
+    flex: 1;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem;
+}
+
+.layout2 header .logo h1 {
+     font-family: fuzzybubble;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.layout2 header nav {
+    flex: 4;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem; 
+}
+
+.layout2 header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2 header nav ul li {
+    flex: 1;
+    list-style-type: none;
+}
+
+.layout2 header nav ul li a {
+    text-decoration: none;
+    color: green;
+}
+
+.layout2 main {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+     background: rgba(0, 238, 255, 0.1);
+     border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+.layout2 main aside {
+   flex: 1 20%;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem; 
+}
+
+.layout2 main article {
+   flex: 1 56%;
+   margin: 0 2%;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem; 
+}
+
+.layout2 footer {
+    background: rgba(0, 238, 255, 0.493);
+    padding: 1rem;
+     background: rgba(0, 238, 255, 0.1);
+      border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+.layout3 header {
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgba(0, 238, 255, 0.1);
+    padding: 1rem;
+     border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+.layout3 header .logo {
+    flex: 1;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem;
+}
+
+.layout3 header .logo h1 {
+     font-family: fuzzybubble;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.layout3 header nav {
+    flex: 4;
+    border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem; 
+}
+
+.layout3 header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout3 header nav ul li {
+    flex: 1;
+    list-style-type: none;
+}
+
+.layout3 header nav ul li a {
+    text-decoration: none;
+    color: green;
+}
+
+.layout3 main {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+     background: rgba(0, 238, 255, 0.1);
+     border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+.layout3 main article {
+    flex: 1;
+    margin: 0 2%;
+     border: 1px solid rgba(188, 188, 188, 0.692);
+      background: rgba(0, 238, 255, 0.315);
+     border-radius: 0.5rem;
+     padding: 1rem; 
+}
+
+.layout3 article:first-child, 
+.layout3 article:last-child {
+    margin: 0;
+}
+
+.layout3 footer {
+    background: rgba(0, 238, 255, 0.493);
+    padding: 1rem;
+     background: rgba(0, 238, 255, 0.1);
+      border: 1px solid rgba(188, 188, 188, 0.692);
+     border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+   .layout1 main,
+   .layout1 article,
+    .layout1 header,
+    .layout1 aside,
+     .layout2 main,
+   .layout2 article,
+    .layout2 header,
+    .layout2 aside,
+    .layout2 .logo,
+    .layout3 main,
+   .layout3 article,
+    .layout3 header,
+    .layout3 aside,
+    .layout3 .logo{
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 0 2%;
+    }
+
+    .layout1 header nav ul,
+    .layout2 header nav ul,
+    .layout3 header nav ul {
+        flex-direction: column;
+    }
+}
