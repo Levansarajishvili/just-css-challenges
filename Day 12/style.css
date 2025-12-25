@@ -98,7 +98,7 @@ body {
 
 @keyframes orbit-1 {
     0% {
-        transform: translateX(-120%) rotate(180deg);
+        transform: translateX(-120%) rotate(-180deg);
     }
 
       30% {
@@ -110,13 +110,13 @@ body {
     }
 
     100% {
-        transform: translateX(-120%) rotate(-180deg);
+        transform: translateX(-120%) rotate(180deg);
     }
 }
 
 @keyframes orbit-2 {
     0% {
-        transform: translateX(120%) rotate(180deg);
+        transform: translateX(120%) rotate(-180deg);
     }
 
       30% {
@@ -128,6 +128,6 @@ body {
     }
 
     100% {
-        transform: translateX(120%) rotate(-180deg);
+        transform: translateX(120%) rotate(180deg);
     }
 }
