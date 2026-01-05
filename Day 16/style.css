@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline{
+    font-family: fuzzybubble;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.sendboxContainer {
+    width: 80%;
+    padding: 1rem;
+    background: rgb(239, 239, 239);
+    border: 2px solid grey;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem;
+}
+
+.button{
+      cursor: pointer;
+      background-color: green;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      color: #fff;
+    }
+
+.launchModal {
+    display: none;
+    }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #000;
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+input[type="checkbox"]:checked ~ .overlay {
+    pointer-events: auto;
+    opacity: 0.7;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 100%;
+    max-width: 640px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .modal {
+    pointer-events: auto;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition-delay: 0.1s;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 30px;
+    background: #fff;
+}
