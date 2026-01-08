@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline{
+    font-family: fuzzybubble;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.sendboxContainer {
+    --primary-color: orangered;
+    --secondary-color: hotpink;
+    --base-measurement: 20px;
+    
+    width: 80%;
+    padding: 1rem;
+    background: rgb(239, 239, 239);
+    border: 2px solid grey;
+}
+
+.sendboxContainer .box {
+    text-align: center;
+
+    --text-color: #f3f3f3;
+
+    color: var(--text-color);
+    
+    background: var(--primary-color);
+    margin: var(--base-measurement);
+    height: calc( var(--base-measurement) * 10 );
+    width: calc( var(--base-measurement) * 10 );
+    line-height: calc( var(--base-measurement) * 10 );
+}
+
+.sendboxContainer .box2 {
+    background: var(--secondary-color);
+}
