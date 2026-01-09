@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline{
+    font-family: fuzzybubble;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.sendboxContainer {
+    width: 80%;
+    padding: 1rem;
+    background: rgb(239, 239, 239);
+    border: 2px solid grey;
+}
+
+.sticky-sidebar-lesson {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.sticky-sidebar-lesson::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+
+.sticky-sidebar-lesson .sandbox {
+  width: 60%;
+  margin: 0 0 40px;
+  float: left;
+}
+
+
+.sticky-sidebar {
+  background: orangered;
+  padding: 40px 40px 60px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 12px 0 -6px #fa90a3;
+  position: fixed;
+z-index: 1000;
+  width: 30%;
+  left: 65%;
+    top: 100px;
+}
