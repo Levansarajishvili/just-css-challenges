@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headline{
+    font-family: fuzzybubble;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.sendboxContainer {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    background: rgb(239, 239, 239);
+    border: 2px solid grey;
+}
+
+.image {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+}
+
+.image::after {
+   display: inherit;
+     position: absolute;
+     /* top: 0;
+     left: 0; */
+     width: 100%;
+     min-width: 200px;
+     padding: 10px 20px 10px 45px;
+     border: 1px dashed #888888;
+     background-color: #f0f0f0;
+     background-image: url(./images/noimage.png);
+     background-size: 10%;
+     background-repeat: no-repeat;
+     background-position: 15px 10px;
+     z-index: 1;
+     content: "" attr(alt) " Not Found";
+}
+
+.depth-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.depth-gallery img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1rem;
+    border: 7px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    transition: filter 0.3s linear, transform 0.3s linear;
+}
+
+.depth-gallery:hover img {
+    filter: blur(5px);
+    transform: scale(0.9);
+}
+
+.depth-gallery img:hover {
+    filter: blur(0);
+    transform: scale(1);
+}
